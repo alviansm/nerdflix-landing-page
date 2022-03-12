@@ -1,0 +1,9 @@
+@use '../customs' as customs;
+
+.offering-container {
+
+    background-image: linear-gradient(rgba($color: customs.$primary-dark,$alpha: 1), rgba($color: customs.$primary-light,$alpha: 1), rgba($color: customs.$primary-dark,$alpha: 1));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

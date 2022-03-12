@@ -1,0 +1,82 @@
+@use '../customs' as customs;
+
+.offering-three {
+    position: relative;
+    border-bottom: 11px solid customs.$secondary-dark;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 420px;
+
+    &-contain {
+        width: 45%;
+    }
+
+    &-image {
+        padding: 0;
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: customs.$screen-medium) {
+    .offering-three {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 360px;
+
+        &-contain {
+            margin-left: 1.125rem;
+            margin-right: 1.125rem;
+            text-align: center;
+            width: 100%;
+        }
+        &-image {
+            width: 360px;
+        }
+    }
+}
+
+@media screen and (max-width: customs.$screen-small) {
+    .offering-three {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 360px;
+
+        &-contain {
+            margin-left: 1.125rem;
+            margin-right: 1.125rem;
+            text-align: center;
+            width: 100%;
+        }
+        &-image {
+            width: 360px;
+        }
+    }
+}
+
+@media screen and (max-width: customs.$mobile-max) {
+    .offering-three {
+        display: flex;
+        flex-direction: column;
+        
+        &-image {
+            width: 300px;
+        }
+    }
+}
+
+@media screen and (max-width: customs.$mobile-small) {
+    .offering-three {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        
+        &-image {
+            width: 300px;
+        }
+    }
+}

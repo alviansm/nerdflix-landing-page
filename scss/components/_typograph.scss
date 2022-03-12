@@ -1,0 +1,167 @@
+@use '../customs' as customs;
+
+.typ-btn-small {
+    font-weight: 600;
+    font-size: .9rem;
+    color: customs.$white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.typ-btn-big {
+    font-size: 1.75rem;
+    color: customs.$white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.typ-header-small {
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: customs.$white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.typ-showcase-small {
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: customs.$white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.typ-header-medium {
+    font-weight: 300;
+    font-size: 1.75rem;
+    color: customs.$white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.typ-header-big {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: customs.$white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.typ-showcase-lead {
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: customs.$white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.typ-link-to-normal {
+    text-decoration: none;
+    color: customs.$white;
+}
+
+.typ-footer {
+    color: customs.$gray-700;
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.typ-nav {
+    color: customs.$gray-600;
+    font-size: .9rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media only screen and (max-width: 900px) {
+    .typ-btn-small {
+        font-size: .9rem;
+    }
+
+    .typ-btn-big {
+        font-size: 1.2rem;
+    }
+
+    .typ-header-small {
+        font-size: .9rem;
+    }
+
+    .typ-showcase-small {
+        font-size: .9rem;
+    }
+
+    .typ-header-medium {
+        font-size: 1.125rem;
+    }
+
+    .typ-showcase-lead {
+        font-size: 1.125rem;
+    }
+
+    .typ-header-big {
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .typ-btn-small {
+        font-size: .9rem;
+    }
+
+    .typ-btn-big {
+        font-size: 1.2rem;
+    }
+
+    .typ-header-small {
+        font-size: .9rem;
+    }
+
+    .typ-header-medium {
+        font-size: 1.125rem;
+    }
+
+    .typ-header-big {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .typ-btn-small {
+        font-size: .9rem;
+    }
+
+    .typ-btn-big {
+        font-size: 1.125rem;
+    }
+
+    .typ-header-small {
+        font-size: .75rem;
+    }
+
+    .typ-header-medium {
+        font-size: .9rem;
+    }
+
+    .typ-header-big {
+        font-size: 1.125rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .typ-btn-small {
+        font-size: .75rem;
+    }
+
+    .typ-btn-big {
+        font-size: 1rem;
+    }
+
+    .typ-header-small {
+        font-size: .75rem;
+    }
+
+    .typ-header-medium {
+        font-size: .9rem;
+    }
+
+    .typ-showcase-lead {
+        font-size: .9rem;
+    }
+
+    .typ-header-big {
+        font-size: 1.2rem;
+    }
+}

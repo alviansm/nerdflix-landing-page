@@ -1,0 +1,716 @@
+.btn-rounded {
+  position: relative;
+  padding: 0.4rem 1.125rem;
+  font-weight: 600;
+  background-color: #EC1C24;
+  border: transparent;
+  border-radius: 2.5px;
+  cursor: pointer;
+  transition: 150ms all ease-in;
+}
+
+.btn-rounded:hover {
+  background-color: #e72c32;
+}
+
+.btn-rounded-secondary {
+  position: relative;
+  padding: 0.4rem 1.125rem;
+  font-weight: 600;
+  background-color: rgba(33, 37, 41, 0.45);
+  border: transparent;
+  border-radius: 2.5px;
+  cursor: pointer;
+  transition: 400ms all ease-in;
+}
+
+.typ-btn-small {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.typ-btn-big {
+  font-size: 1.75rem;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.typ-header-small {
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.typ-showcase-small {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.typ-header-medium {
+  font-weight: 300;
+  font-size: 1.75rem;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.typ-header-big {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.typ-showcase-lead {
+  font-weight: 600;
+  font-size: 1.75rem;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.typ-link-to-normal {
+  text-decoration: none;
+  color: #fff;
+}
+
+.typ-footer {
+  color: #495057;
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.typ-nav {
+  color: #6c757d;
+  font-size: 0.9rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+@media only screen and (max-width: 900px) {
+  .typ-btn-small {
+    font-size: 0.9rem;
+  }
+
+  .typ-btn-big {
+    font-size: 1.2rem;
+  }
+
+  .typ-header-small {
+    font-size: 0.9rem;
+  }
+
+  .typ-showcase-small {
+    font-size: 0.9rem;
+  }
+
+  .typ-header-medium {
+    font-size: 1.125rem;
+  }
+
+  .typ-showcase-lead {
+    font-size: 1.125rem;
+  }
+
+  .typ-header-big {
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .typ-btn-small {
+    font-size: 0.9rem;
+  }
+
+  .typ-btn-big {
+    font-size: 1.2rem;
+  }
+
+  .typ-header-small {
+    font-size: 0.9rem;
+  }
+
+  .typ-header-medium {
+    font-size: 1.125rem;
+  }
+
+  .typ-header-big {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .typ-btn-small {
+    font-size: 0.9rem;
+  }
+
+  .typ-btn-big {
+    font-size: 1.125rem;
+  }
+
+  .typ-header-small {
+    font-size: 0.75rem;
+  }
+
+  .typ-header-medium {
+    font-size: 0.9rem;
+  }
+
+  .typ-header-big {
+    font-size: 1.125rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .typ-btn-small {
+    font-size: 0.75rem;
+  }
+
+  .typ-btn-big {
+    font-size: 1rem;
+  }
+
+  .typ-header-small {
+    font-size: 0.75rem;
+  }
+
+  .typ-header-medium {
+    font-size: 0.9rem;
+  }
+
+  .typ-showcase-lead {
+    font-size: 0.9rem;
+  }
+
+  .typ-header-big {
+    font-size: 1.2rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.showcase {
+  width: 100%;
+  height: 100vh;
+  background: url("../../assets/images/showcase-background.png") no-repeat center center/cover;
+}
+.showcase .showcase-header {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 2;
+}
+.showcase .showcase-header .showcase-header-logo {
+  width: 9rem;
+  height: 1.5rem;
+  cursor: pointer;
+  z-index: 2;
+}
+.showcase .showcase-header .showcase-header-logo img {
+  width: 100%;
+}
+@media only screen and (max-width: 480px) {
+  .showcase .showcase-header .showcase-header-logo {
+    width: 6rem;
+  }
+}
+.showcase .showcase-header .showcase-header-menu {
+  z-index: 2;
+  margin-top: 0.9rem;
+}
+.showcase::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.15));
+  z-index: 1;
+}
+.showcase .showcase-content {
+  z-index: 2;
+  position: relative;
+  top: 15%;
+  left: 20%;
+  width: 60%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.showcase .showcase-content-greeting {
+  margin-bottom: 0.75rem;
+}
+.showcase .showcase-content-offer-primary {
+  margin-bottom: 0.75rem;
+}
+.showcase .showcase-content-offer-secondary {
+  margin-bottom: 1.5rem;
+}
+
+.offering-container {
+  background-image: linear-gradient(#2a2abb, midnightblue, #2a2abb);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offering-one {
+  position: relative;
+  border-top: 11px solid #212529;
+  border-bottom: 11px solid #212529;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 420px;
+}
+.offering-one-contain {
+  text-align: left;
+  width: 40%;
+}
+.offering-one-image {
+  width: 480px;
+}
+
+@media screen and (max-width: 900px) {
+  .offering-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 360px;
+  }
+  .offering-one-contain {
+    margin-left: 1.125rem;
+    margin-right: 1.125rem;
+    text-align: center;
+    width: 100%;
+  }
+  .offering-one-image {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .offering-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 360px;
+  }
+  .offering-one-contain {
+    margin-left: 1.125rem;
+    margin-right: 1.125rem;
+    text-align: center;
+    width: 100%;
+  }
+  .offering-one-image {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .offering-one {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+  }
+  .offering-one-image {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .offering-one {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+  }
+  .offering-one-image {
+    width: 300px;
+  }
+}
+.offering-two {
+  position: relative;
+  border-bottom: 11px solid #212529;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 420px;
+}
+.offering-two-contain {
+  text-align: right;
+  width: 45%;
+}
+.offering-two-image {
+  padding: 0;
+  width: 35%;
+}
+
+@media screen and (max-width: 900px) {
+  .offering-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 360px;
+  }
+  .offering-two-contain {
+    margin-left: 1.125rem;
+    margin-right: 1.125rem;
+    text-align: center;
+    width: 100%;
+  }
+  .offering-two-image {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .offering-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 360px;
+  }
+  .offering-two-contain {
+    margin-left: 1.125rem;
+    margin-right: 1.125rem;
+    text-align: center;
+    width: 100%;
+  }
+  .offering-two-image {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .offering-two {
+    display: flex;
+    flex-direction: column;
+  }
+  .offering-two-image {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .offering-two {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+  }
+  .offering-two-image {
+    width: 300px;
+  }
+}
+.offering-three {
+  position: relative;
+  border-bottom: 11px solid #212529;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 420px;
+}
+.offering-three-contain {
+  width: 45%;
+}
+.offering-three-image {
+  padding: 0;
+  width: 35%;
+}
+
+@media screen and (max-width: 900px) {
+  .offering-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 360px;
+  }
+  .offering-three-contain {
+    margin-left: 1.125rem;
+    margin-right: 1.125rem;
+    text-align: center;
+    width: 100%;
+  }
+  .offering-three-image {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .offering-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 360px;
+  }
+  .offering-three-contain {
+    margin-left: 1.125rem;
+    margin-right: 1.125rem;
+    text-align: center;
+    width: 100%;
+  }
+  .offering-three-image {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .offering-three {
+    display: flex;
+    flex-direction: column;
+  }
+  .offering-three-image {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .offering-three {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+  }
+  .offering-three-image {
+    width: 300px;
+  }
+}
+.offering-four {
+  position: relative;
+  border-bottom: 11px solid #212529;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 420px;
+}
+.offering-four-contain {
+  text-align: right;
+  width: 45%;
+}
+.offering-four-image {
+  padding: 0;
+  width: 35%;
+}
+
+@media screen and (max-width: 900px) {
+  .offering-four {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 360px;
+  }
+  .offering-four-contain {
+    margin-left: 1.125rem;
+    margin-right: 1.125rem;
+    text-align: center;
+    width: 100%;
+  }
+  .offering-four-image {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .offering-four {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 360px;
+  }
+  .offering-four-contain {
+    margin-left: 1.125rem;
+    margin-right: 1.125rem;
+    margin-top: 1.3rem;
+    text-align: center;
+    width: 100%;
+  }
+  .offering-four-image {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .offering-four {
+    display: flex;
+    flex-direction: column;
+  }
+  .offering-four-image {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .offering-four {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+  }
+  .offering-four-image {
+    width: 300px;
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #000;
+}
+.footer-section {
+  margin-top: 1.2rem;
+}
+.footer-navigation {
+  margin-top: 1.125rem;
+}
+.footer-navigation p {
+  margin-top: 0.2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-register {
+  background: url("../../assets/images/showcase-background.png") no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-register::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.15));
+  z-index: 1;
+}
+
+.container {
+  z-index: 2;
+  max-width: 320px;
+  max-height: 480px;
+  width: 100%;
+  height: 85%;
+  background-color: rgba(42, 42, 187, 0.8);
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  box-shadow: 4px 6px 36px #000;
+}
+.container form {
+  overflow: hidden;
+}
+.container .btn-toogle {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.125rem;
+  width: 10rem;
+  margin: 0 auto;
+  margin-top: 1.125rem;
+}
+.container .btn-toogle #btn-toogle-selected {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 5rem;
+  height: 90%;
+  border: 2px solid red;
+  background-color: #EC1C24;
+  transition: 250ms all ease-in;
+}
+.container .btn-toogle-login {
+  color: #fff;
+}
+.container .btn-toogle-signup {
+  color: #fff;
+}
+.container .form-login {
+  position: relative;
+  margin-top: 1.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transition: 250ms all linear;
+}
+.container .form-login .form-login-input-text {
+  font-size: 1.125rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0.375rem 0.435rem;
+  margin-bottom: 1.125rem;
+}
+.container .form-login .form-login-remember-me-container {
+  margin-bottom: 1.125rem;
+}
+.container .form-login .form-login-remember-me-container label {
+  font-weight: 600;
+  color: #fff;
+  font-size: 0.9rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.container .form-login-back {
+  position: relative;
+  width: 90%;
+  margin-bottom: 1.125rem;
+}
+.container .form-login-submit {
+  position: relative;
+  width: 90%;
+}
+.container .form-register {
+  position: absolute;
+  left: 65%;
+  top: 20%;
+  margin-top: 1.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 250ms all linear;
+  visibility: hidden;
+}
+.container .form-register .form-register-input-text {
+  font-size: 1.125rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0.375rem 0.435rem;
+  margin-bottom: 1.125rem;
+}
+.container .form-register .form-register-terms-container {
+  margin-bottom: 1.125rem;
+}
+.container .form-register .form-register-terms-container label {
+  font-weight: 600;
+  color: #fff;
+  font-size: 0.9rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.container .form-register .form-register-back {
+  position: relative;
+  width: 90%;
+  margin-bottom: 1.125rem;
+}
+.container .form-register .form-register-submit {
+  position: relative;
+  width: 90%;
+}
+
+@media only screen and (max-width: 640px) {
+  .form-register {
+    position: absolute;
+    top: 20%;
+    left: 75%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

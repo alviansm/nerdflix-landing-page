@@ -1,0 +1,20 @@
+@use '../customs' as customs;
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: customs.$black;
+
+    &-section {
+        margin-top: 1.2rem;
+    }
+
+    &-navigation {
+        margin-top: 1.125rem;
+
+        p {
+            margin-top: .2rem;
+        }
+    }
+}

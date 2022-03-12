@@ -1,0 +1,28 @@
+@use '../customs' as customs;
+@use './mixins' as mixins;
+
+.btn-rounded {
+    position: relative;
+    padding: .4rem 1.125rem;
+    font-weight: 600;
+    background-color: customs.$red-logo;
+    border: transparent;
+    border-radius: 2.5px;
+    cursor: pointer;
+    transition: 150ms all ease-in;
+}
+
+.btn-rounded:hover {
+    background-color: customs.$rose;
+}
+
+.btn-rounded-secondary {
+    position: relative;
+    padding: .4rem 1.125rem;
+    font-weight: 600;
+    background-color: rgba($color: customs.$secondary-dark, $alpha: .45);
+    border: transparent;
+    border-radius: 2.5px;
+    cursor: pointer;
+    transition: 400ms all ease-in;
+}

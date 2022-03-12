@@ -1,0 +1,47 @@
+<!Doctype html>
+<html>
+    <head>
+        <!-- Meta tags -->
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="sandal">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+
+        <!-- Site -->
+        <title> NerdFlix - Registrasi Akun</title>
+    </head>
+    <body class="main-register">
+        <div class="container">
+            <div class="btn-toogle">
+                <div id="btn-toogle-selected"></div>
+                <button type="button" class="btn-toogle-login btn-rounded-secondary" onclick="login()">Masuk,</button>
+                <button type="button" class="btn-toogle-signup btn-rounded-secondary" onclick="register()">Daftar.</button>
+            </div>
+            <form class="form-login" id="form-login">
+                <input type="text" placeholder="Username" class="form-login-input-text" required>
+                <input type="password" placeholder="Kata Sandi" class="form-login-input-text" required>
+                <div class="form-login-remember-me-container">
+                    <input type="checkbox" class="form-login-remember-me" name="remember-me">
+                    <label for="remember-me">Simpan akun ke komputer ini.</label>
+                </div>
+                <button type="button" class="form-login-back btn-rounded-secondary typ-btn-small" href="./index.html"><a href="./index.html" class="typ-link-to-normal">Kembali.</a></button>
+                <button type="submit" class="form-login-submit btn-rounded typ-btn-small">Masuk.</button>
+            </form>
+
+            <form class="form-register" id="form-register">
+                <input type="email" placeholder="youremail@mail.com" class="form-register-input-text" required>
+                <input type="text" placeholder="Username" class="form-register-input-text" required>
+                <input type="password" placeholder="Kata Sandi" class="form-register-input-text" required>
+                <div class="form-register-terms-container">
+                    <input type="checkbox" class="form-register-terms" name="agree-terms">
+                    <label for="agree-terms">Saya setuju dengan aturan yang berlaku.</label>
+                </div>
+                <button type="button" class="form-register-back btn-rounded-secondary typ-btn-small" href="./index.html"><a href="./index.html">Kembali.</a></button>
+                <button type="submit" class="form-register-submit btn-rounded typ-btn-small">Lanjut.</button>
+            </form>
+        </div>
+        <script src="./assets/js/register.js"></script>
+    </body>    
+</html>

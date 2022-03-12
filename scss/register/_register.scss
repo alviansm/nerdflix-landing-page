@@ -1,0 +1,164 @@
+@use '../customs' as customs;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-register {
+    background: url('../../assets/images/showcase-background.png') no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(180deg, rgba($color: customs.$black, $alpha: .45), rgba($color: customs.$black, $alpha: .15));
+        z-index: 1;
+    }
+}
+
+.container {
+    z-index: 2;
+    max-width: 320px;
+    max-height: 480px;
+    width: 100%;
+    height: 85%;
+    background-color: rgba($color: customs.$primary-dark, $alpha: .80);
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    box-shadow: 4px 6px 36px customs.$black;
+
+    form {
+        overflow: hidden;
+    }
+
+    .btn-toogle {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.125rem;
+        width: 10rem;
+        margin: 0 auto;
+        margin-top: 1.125rem;
+        
+        #btn-toogle-selected {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 5rem;
+            height: 90%;
+            border: 2px solid red;
+            background-color: customs.$red-logo;
+            transition: 250ms all ease-in;
+        }
+
+        &-login {
+            color: customs.$white;
+        }
+
+        &-signup {
+            color: customs.$white;
+        }
+    }
+
+    .form-login {
+        position: relative;
+        margin-top: 1.125rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        transition: 250ms all linear;
+
+        .form-login-input-text {
+            font-size: 1.125rem;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: .375rem .435rem;
+            margin-bottom: 1.125rem;
+        }
+
+        .form-login-remember-me-container {
+            margin-bottom: 1.125rem;
+
+            label {
+                font-weight: 600;
+                color: customs.$white;
+                font-size: .9rem;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+        }
+    }
+
+        .form-login-back {
+            position: relative;
+            width: 90%;
+            margin-bottom: 1.125rem;
+        }
+
+        .form-login-submit {
+            position: relative;
+            width: 90%;
+        }
+
+    .form-register {
+        position: absolute;
+        left: 65%;
+        top: 20%;
+        margin-top: 1.125rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 250ms all linear;
+        visibility: hidden;
+
+        .form-register-input-text {
+            font-size: 1.125rem;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: .375rem .435rem;
+            margin-bottom: 1.125rem;
+        }
+
+        .form-register-terms-container {
+            margin-bottom: 1.125rem;
+
+            label {
+                font-weight: 600;
+                color: customs.$white;
+                font-size: .9rem;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+        }
+
+        .form-register-back {
+            position: relative;
+            width: 90%;
+            margin-bottom: 1.125rem;
+        }
+
+        .form-register-submit {
+            position: relative;
+            width: 90%;
+        }        
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .form-register {
+        position: absolute;
+        top: 20%;
+        left: 75%;
+    }
+}
